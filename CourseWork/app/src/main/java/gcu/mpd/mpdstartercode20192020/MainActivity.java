@@ -223,29 +223,29 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         ListView listView = (ListView) findViewById(R.id.mobile_list);
         listView.setAdapter(adapter);
-        inputSearch.addTextChangedListener(new TextWatcher() {
+//         inputSearch.addTextChangedListener(new TextWatcher() {
 
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+//             @Override
+//             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
-            }
+//             }
 
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                MainActivity.this.adapter.getFilter().filter(s);
-            }
+//             @Override
+//             public void onTextChanged(CharSequence s, int start, int before, int count) {
+//                 MainActivity.this.adapter.getFilter().filter(s);
+//             }
 
-            @Override
-            public void afterTextChanged(Editable s) {
+//             @Override
+//             public void afterTextChanged(Editable s) {
 
-            }
+//             }
 
-        });
-    }
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.activity_main, menu);
-        return true;
+//         });
+//     }
+//     public boolean onCreateOptionsMenu(Menu menu) {
+//         // Inflate the menu; this adds items to the action bar if it is present.
+//         getMenuInflater().inflate(R.menu.activity_main, menu);
+//         return true;
     }
 
 }
