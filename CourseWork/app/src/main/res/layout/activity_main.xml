@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-16dp">
+
+        <Spinner
+            android:id="@+id/List_Links"
+            android:layout_width="356dp"
+            android:layout_height="57dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:shadowColor="@color/colorAccent"
+            android:text="submit"
+            android:textColor="#ffff"
+            android:textColorHighlight="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="375dp"
+            android:layout_height="41dp"
+            android:layout_marginLeft="10dp"
+            android:hint="Search"
+            android:imeOptions="actionSearch" />
+
+        <ListView
+            android:id="@+id/mobile_list"
+            android:layout_width="match_parent"
+            android:layout_height="390dp" />
+
+        <Button
+            android:id="@+id/mapbutton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="view_map" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

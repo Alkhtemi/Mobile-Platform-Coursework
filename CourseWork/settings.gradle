@@ -1,0 +1,3 @@
+rootProject.name='CourseWork'
+include ':app'
+include ':myapplication'
