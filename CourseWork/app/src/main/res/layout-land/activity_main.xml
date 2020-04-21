@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Spinner
+            android:id="@+id/List_Links"
+            android:layout_width="231dp"
+            android:layout_height="44dp" />
+
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="223dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:shadowColor="@color/colorAccent"
+            android:text="submit"
+            android:textColor="#ffff"
+            android:textColorHighlight="#FFFFFF" />
+
+        <SearchView
+            android:layout_width="224dp"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="414dp"
+            android:layout_height="317dp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="-120dp"
+
+            >
+
+
+            <TextView
+                android:id="@+id/rawDataDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+
+                android:text="raw data is displayed here"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/mapbutton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="225dp"
+            android:layout_height="63dp"
+            android:layout_marginRight="390dp"
+            android:layout_marginTop="-120dp"
+            android:text="@string/view_map" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

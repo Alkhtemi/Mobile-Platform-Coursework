@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainView"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/List_Links"
+            android:layout_width="356dp"
+            android:layout_height="57dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorAccent"
+            android:shadowColor="@color/colorAccent"
+            android:text="submit"
+            android:textColor="#ffff"
+            android:textColorHighlight="#FFFFFF" />
+
+        <EditText
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:id="@+id/textViewWrapper"
+            android:layout_width="fill_parent"
+            android:layout_height="361dp">
+
+
+            <TextView
+                android:id="@+id/rawDataDisplay"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="raw data is displayed here"
+                android:textColor="@android:color/background_dark"
+                android:textSize="20sp" />
+        </ScrollView>
+<!--        <TextView-->
+<!--            android:id="@+id/description"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="info"-->
+<!--            android:textColor="@android:color/background_dark"-->
+<!--            android:textSize="20sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/pubdate"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="date"-->
+<!--            android:textColor="@android:color/background_dark"-->
+<!--            android:textSize="20sp" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/link"-->
+<!--            android:layout_width="fill_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Link"-->
+<!--            android:textColor="@android:color/background_dark"-->
+<!--            android:textSize="20sp" />-->
+        <ListView
+            android:id="@+id/listView1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </ListView>
+        <Button
+            android:id="@+id/mapbutton"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="@string/view_map" />
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
